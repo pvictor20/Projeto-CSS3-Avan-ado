@@ -1,0 +1,34 @@
+/******
+ * Seletor de filho */
+ li>a{
+ 	color: seagreen;
+ 	text-decoration: none;
+ }
+
+ /*****
+  Seletor de descendente */
+  p a{
+  	color: seagreen;
+  }
+
+  /*****
+   Seletor de irmão adjacente
+
+   Seleciona o primeiro elemento <p>
+   depois de qualquer elemento <h1>
+   (mas não outros elementos <p>)****/
+
+   h1+p{
+   	color: purple;
+   }
+
+   /*****
+    Seletor de irmão geral
+
+    Se houvesse dois elementps <p> que
+    fossem irmãos de um elemento <h2>
+    essa regra se aplicaria aos dois. **/
+
+    h2~p{
+    	color: hotpink;
+    }
