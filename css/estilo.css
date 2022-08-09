@@ -1,13 +1,13 @@
 /******
  * Seletor de filho */
- li>a{
+ /** li>a{
  	color: seagreen;
  	text-decoration: none;
  }
 
  /*****
   Seletor de descendente */
-  p a{
+ /** p a{
   	color: seagreen;
   }
 
@@ -18,7 +18,7 @@
    depois de qualquer elemento <h1>
    (mas não outros elementos <p>)****/
 
-   h1+p{
+  /** h1+p{
    	color: purple;
    }
 
@@ -29,6 +29,33 @@
     fossem irmãos de um elemento <h2>
     essa regra se aplicaria aos dois. **/
 
-    h2~p{
+    /** h2~p{
     	color: hotpink;
     }
+
+
+    /******* AULA DE HERANÇA E ESPECIFICIDADE *****/
+     /** p{
+        color: blue !important; 
+     }
+
+     /** p{
+        color: darkred;
+     }
+     /** o último sempre vai ser priorizado, ao menos que tenha o !important**/
+
+      * { /*{4}*/
+        color: mediumvioletred;
+      }
+
+      h2 { /* {3}*/
+        color: skyblue;
+      }
+
+      h2.verde{    /*{2}     /*** mais específico **/
+        color: seagreen;
+      }
+
+      h2#roxo{   /*{1}*/
+        color: rebeccapurple;
+      }
