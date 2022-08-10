@@ -44,18 +44,46 @@
      }
      /** o último sempre vai ser priorizado, ao menos que tenha o !important**/
 
-      * { /*{4}*/
-        color: mediumvioletred;
+      /** * { /*{4}*/
+        /** color: mediumvioletred; /**
+      } /**
+
+      /**h2 { /* {3}*/
+        /**color: skyblue;
       }
 
-      h2 { /* {3}*/
-        color: skyblue;
-      }
+      /**h2.verde{    /*{2}     /*** mais específico **/
+      /**  color: seagreen;
+      }/**
 
-      h2.verde{    /*{2}     /*** mais específico **/
-        color: seagreen;
-      }
+      /** h2#roxo{   /*{1}*/
+      /**  color: rebeccapurple;
+      }/**
 
-      h2#roxo{   /*{1}*/
-        color: rebeccapurple;
-      }
+      /**************** AULA DE NAVEGAÇÃO VERTICAL *************/
+       ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+
+
+       ul a {
+        list-style-type: none; /** tirar a bolinha da lista **/
+        width: 200px;
+        height: 40px;
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-indent: 40px;
+        line-height: 40px;
+        background: url(../imagens/menu.png) no-repeat left bottom;
+       }
+
+       a:hover{
+        background-position: right bottom;
+        color: #fff;
+       }
+
+    
