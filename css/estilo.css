@@ -363,13 +363,13 @@
 
        /* AULA DE ESTILIZAR TABELAS ****/
 
-       body{
+      /* body{
         font-family: "Trebuchet MS", Helvetica, sans-serif;
        }
 
        table{
         width: 600px;
-        border-collapse: separate; /*collapse*/
+        border-collapse: separate; /*collapse
        }
 
        th, td{
@@ -395,4 +395,44 @@
 
        .numero{
         text-align: right;
-       }
+       } */
+
+
+       /***** AULA DE COMO ESTILIZAR UM FORMULÁRIO ***/
+
+    body{
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    fieldset{
+        padding: 1em;
+        margin: 1em 0;
+        border: 1px solid #ccc;
+        background: #f8f8f8;
+    }
+
+    legend{
+        font-weight: bold;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    input /*[type="text"]*/{
+        width: 20em;
+    }
+
+    input.radio, input.checkbox, input.submit{
+        width: auto;
+    }
+
+    textarea{
+        width: 20em;
+        height: 10em;
+    }
+
+    .radio{
+        margin-right: 1em;
+    }
